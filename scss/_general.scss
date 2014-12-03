@@ -1,0 +1,40 @@
+// Clearfix
+.clearfix { 
+  min-height: 1px; 
+}
+.clearfix:after {
+  content: ".";
+  height: 0;
+  min-height: 0;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both; 
+}
+
+.content {
+	width: 900px;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+
+.content div.status {
+	font-size: 1.375em;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	color: $statusText;
+	background: $statusBg;
+	padding: 5px 40px;
+	margin-bottom: 11px;
+}
+
+.content div.status strong {
+	font-weight: bold;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}

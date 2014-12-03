@@ -1,0 +1,177 @@
+.module {
+	border: 1px solid $moduleBorder;
+	padding: 25px;
+	margin-bottom: 30px;
+}
+
+.module-top {
+	border-bottom: 1px solid $moduleHeaderBorder;
+	position: relative;
+
+	h2 {
+		color: $pbTheme;
+		font-size: 1.75em;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-weight: 700;
+		padding-bottom: 5px;
+	}
+	.toggle {
+		color: $pbTheme;
+		font-size: 0.9375em;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+		position: absolute;
+		right: 0;
+		top: 0;
+		padding-right: 20px;
+		background: url(../images/arrow-down.png) no-repeat right center;
+	}
+
+}
+
+.alternative {
+	border: 1px solid $moduleBorderAlt;
+	background: $moduleBgAlt;
+	h2 {
+		color: $moduleAltColour ;
+	}
+}
+
+.module-body {
+	display: none;
+}
+
+.open .toggle {
+	background: url(../images/arrow-up.png) no-repeat right center;
+}
+
+.open .module-body {
+	display: block;
+}
+
+.property-details {
+	margin-top: 25px;
+	position: relative;
+}
+
+
+.property-details img {
+	margin-right: 18px;
+	display: inline-block;
+	float: left;
+}	
+
+.property-details p.address {
+	color: $pbTheme;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 1.25em;
+	display: inline-block;
+	max-width: 450px;
+}
+
+.property-details .right-col {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.property-details .right-col p.title {
+	color: $propertyDetailsTitle;
+	font-family: arial;
+	font-size: 0.9375em;
+	margin-bottom: 5px;
+	text-align: right;
+} 
+
+.property-details .right-col p.price {
+	color: $pbTheme;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 1.75em;
+	margin-bottom: 5px;
+	text-align: right;
+} 
+
+a.button {
+	@include standard-button($button1Text ,$button1Bg );
+	&:hover {
+        @include standard-button($button1Text,$pbTheme);
+    }
+}
+
+.left-module {
+	margin-right: 14px;
+}
+
+.right-module {
+	margin-left: 14px;
+}
+
+.buyers-details {
+	margin-top: 20px;
+}
+
+.buyers-details p.left {
+	display: inline-block;
+	color: $pbTheme;
+	font-size: 1.0625em;
+	width: 150px;
+}
+
+.buyers-details p.right {
+	display: inline-block;
+	font-size: 1.0625em;
+	color: $propertyDetailsTitle;
+	margin-bottom: 10px;
+}
+
+.buyers-details p.nbm {
+	margin-bottom: 0;
+}
+
+.buyers-offer {
+	margin-top: 20px;
+	position: relative;
+}
+
+.buyers-offer .price {
+	color: #000;
+	font-size: 1.75em;
+	margin-bottom: 5px;
+}
+
+.buyers-offer .small-text {
+	color: $propertyDetailsTitle;
+	font-size: 0.6875em;
+	margin-bottom: 15px;
+}
+
+.buyers-offer .date-time {
+	position: absolute;
+	bottom: 5px;
+	right: 25px;
+	color: $pbTheme;
+	font-size: 0.75em;
+}
+
+.response {
+	margin-top: 20px;
+	position: relative;
+}
+
+.alternative .response .text {
+	color: $moduleAltColour;
+	font-size: 1.375em;
+	margin-bottom: 15px;
+	max-width: 280px;
+}
+
+.response .date-time {
+	position: absolute;
+	bottom: 5px;
+	right: 25px;
+	color: $pbTheme;
+	font-size: 0.75em;
+}

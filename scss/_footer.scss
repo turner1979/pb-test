@@ -1,0 +1,23 @@
+footer {
+	background: $footerBg;
+	
+	.inner {
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	nav a { 
+		color: $footerText;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 10px 0;
+		display: inline-block;
+	}
+
+	nav span {
+		color: $footerText;
+		display: inline-block;
+		padding: 0 16px;
+		font-size: 0.675em;
+	}
+}
