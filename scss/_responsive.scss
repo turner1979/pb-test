@@ -1,0 +1,107 @@
+
+@media screen and (max-width: 960px) {
+
+
+	header div.inner { width: auto; margin: 0 20px; }
+	.content { width: auto; margin: 45px 20px 45px 20px; }
+
+	.property-details .right-col {
+		position: static;
+	}
+
+	.property-details p.address { 
+		max-width: auto;
+		display: block;
+	}
+
+	.property-details p.address { 
+		max-width: auto;
+		display: block;
+		margin-bottom: 15px;
+	} 
+
+	.property-details img {
+		float: none;
+		margin-bottom: 15px;
+	}
+
+	.property-details img {
+		float: none;
+	}
+	.property-details .right-col p.title, .property-details .right-col p.price {
+		text-align: left;
+	}
+
+	.property-details .right-col p.price {
+		margin-bottom: 15px;
+	}
+
+	div.column50 {
+		width: 100%;
+	}
+
+	.left-module, .right-module { margin: 0 0 30px 0; }
+
+	.negotiate-for-me p {
+		margin-bottom: 15px;
+	}
+
+	.negotiate-for-me a.button {
+		position: static;
+	}
+
+	footer div.inner {
+		width: auto;
+	}
+
+	footer nav a {
+		display: block;
+		text-align: center;
+	}
+
+	footer nav span { display: none; }
+
+}
+
+@media screen and (max-width: 760px) {
+
+	header {
+		height: auto;
+	}
+
+	header div.inner { width: auto; margin: 0 20px; }
+	header div.inner a.logo { float: none; }
+	header div.inner span.slogan {
+		float: none;
+		margin-bottom: 20px;
+		padding-top: 10px;
+	}
+
+	.submit-offer a.submit-button {
+		position: static;
+		margin: 15px 0 0 32px;
+	}
+
+	.buyers-offer .date-time, .response .date-time  {
+		margin: 15px 0;
+		position: static;
+	}
+
+	.buyers-details p.right {
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 520px) {
+
+	.module-top h2 {
+		font-size: 1.2em;
+	}
+
+	.module-top .toggle {
+		font-size: 0.675em;
+		margin-top: 5px;
+	}
+
+}
