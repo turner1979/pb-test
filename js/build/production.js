@@ -835,7 +835,6 @@ Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0));};
 $(document).ready(function(){
 
 	toggleModules();
-	normalise5050Column();
 	submitButtonEvent();
 
 });
@@ -852,25 +851,13 @@ function toggleModules(){
 		}
 		else{
 			$module.addClass('open');
-			$(this).html('hide');
+			$(this).html('hide'); 
 		}
 
 		return false;
 
 	});
 
-
-}
-
-function normalise5050Column(){
-
-	var height = 0;
-	$('.buyers-offer, .response').each(function(){
-		if( $(this).height() > height){
-			height = $(this).height();
-		}
-		$('.buyers-offer, .response').height(height);
-	});
 
 }
 
