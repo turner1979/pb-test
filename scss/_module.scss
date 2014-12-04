@@ -175,3 +175,82 @@ a.button {
 	color: $pbTheme;
 	font-size: 0.75em;
 }
+
+.negotiate-for-me {
+	border: 1px solid $moduleBorder;
+	padding: 15px 30px;
+	position: relative;
+	margin-top: 28px;
+}
+
+.negotiate-for-me p {
+	font-size: 1.0625em;
+	color: $pbTheme;
+	max-width: 500px;
+	font-weight: bold;
+}
+
+.negotiate-for-me a.button {
+	position: absolute;
+	right: 30px;
+	top: 15px;
+	@include standard-button($button1Text,$pbTheme);
+	&:hover {
+		@include standard-button($button1Text ,$button1Bg );
+    }
+}
+
+.submit-offer p.top {
+	font-size: 1.375em;
+	color: $pbTheme;
+	max-width: 500px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	padding: 30px 0 0 35px;
+}
+
+.submit-offer {
+	position: relative;
+}
+
+.submit-offer form {
+	padding-top: 15px;
+}
+
+.submit-offer form p.pound {
+	background: url(../images/pound.jpg) no-repeat left center;
+	width: 32px;
+	height: 40px;
+	float: left;
+}
+
+.submit-offer form input {
+	float: left;
+	border: 1px solid $moduleHeaderBorder;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+
+.submit-offer form a.button {
+	margin: 15px 0 0 32px;
+	@include standard-button($button1Text,$pbTheme);
+	&:hover {
+		@include standard-button($button1Text ,$button1Bg );
+    }
+}
+
+.submit-offer a.submit-button {
+	position: absolute;
+	top: 70px;
+	right: 0;
+	@include large-button($button1Text,#00aeef);
+	&:hover {
+		@include large-button($button1Text ,$button1Bg );
+    }
+}
+
+.submit-offer p.error {
+	display: block;
+	color: #aa0000;
+	padding-left: 40px;
+}

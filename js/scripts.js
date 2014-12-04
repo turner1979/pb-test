@@ -3,6 +3,7 @@ $(document).ready(function(){
 
 	toggleModules();
 	normalise5050Column();
+	submitButtonEvent();
 
 });
 
@@ -37,6 +38,34 @@ function normalise5050Column(){
 		}
 		$('.buyers-offer, .response').height(height);
 	});
+
+}
+
+function submitButtonEvent(){
+
+	$('.submit-button').click(function(){
+
+		var $value = $('input#offer').val();
+		$('.submit-offer p.error').remove();
+
+		if( $.isNumeric( $value) && $value > 0 ){
+
+			// output price to console
+			var priceObj = { 'price' : $value }
+
+
+			console.log(priceObj);
+
+		}
+		else{
+			
+			$('input#offer').parent().after('<p class="error">Please submit a valid number</p>');
+
+		}
+		return false;
+
+	});
+
 
 }
 
